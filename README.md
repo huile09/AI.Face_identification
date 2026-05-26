@@ -9,8 +9,6 @@ Dự án sử dụng mạng nơ-ron tích chập (CNN) tự dựng dựa trên t
 Do kích thước file ma trận trọng số `.h5` của các mô hình Deep Learning khá lớn và vượt quá giới hạn lưu trữ thông thường của GitHub, bạn vui lòng truy cập vào các đường liên kết Google Drive dưới đây để tải file cấu hình dự án:
 
 * **Mô hình Nhận diện Khuôn mặt (80 Epochs):** 👉 [Tải file mo_hinh_cnn_80_epochs.h5 tại đây](https://drive.google.com/file/d/1QxVkbvjlQpVqofOmhwwaA3ePAnUzzg0L/view?usp=sharing)
-    * *Thông số:* Input Shape (128, 128, 1), Kênh màu Grayscale, Độ chính xác đạt ~86%.
----
 
 ## Hướng Dẫn Sử Dụng Trong Google Colab
 
@@ -20,7 +18,7 @@ Do kích thước file ma trận trọng số `.h5` của các mô hình Deep Le
 from tensorflow.keras.models import load_model
 
 # Nạp mô hình từ đường dẫn lưu trữ
-model_path = 'mo_hinh_cnn_80_epochs2.h5' # hoặc file tiền polymer
+model_path = 'mo_hinh_cnn_80_epochs.h5' # hoặc file tiền polymer
 reloaded_model = load_model(model_path)
 
 print("Đã nạp thành công mô hình! Sẵn sàng thực hiện predict ảnh test.")
